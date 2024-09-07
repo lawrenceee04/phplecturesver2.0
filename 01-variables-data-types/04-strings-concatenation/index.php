@@ -1,3 +1,9 @@
+<?php
+  $first_name = 'Maria';
+  $last_name = 'Clara';
+  $full_name = $first_name . ' ' . $last_name;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,6 +23,30 @@
   <div class="container mx-auto p-4 mt-4">
     <div class="bg-white rounded-lg shadow-md p-6">
       <!-- Output -->
+
+      <p class="text-xl">
+      <?=
+       'Hello, my name is ' . $full_name;
+      ?>
+      </p>
+
+      <p class="text-xl">
+      <?=
+       "Hello, my name is $full_name";
+      ?>
+      </p>
+
+      <p class="text-xl">
+      <?=
+       'Hello, my name is $full_name';
+      ?>
+      </p>
+
+      <p class="text-xl">
+      <?=
+       "Hello, my name is {$full_name}";
+      ?>
+      </p>
 
     </div>
   </div>

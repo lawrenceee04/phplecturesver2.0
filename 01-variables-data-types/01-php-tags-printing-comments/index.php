@@ -1,3 +1,11 @@
+<?php
+    echo 'Hello World <br>';
+    echo 'Hello World';
+
+    echo 'Line 1', '<br>', 'Line 2', 'Line 3';
+
+    
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +24,7 @@
     </header>
     <div class="container mx-auto p-4 mt-4">
         <div class="bg-white rounded-lg shadow-md p-6">
-            <h2 class="text-2xl font-semibold mb-4">Welcome To The Bootcam WD 103P</h2>
+            <h2 class="text-2xl font-semibold mb-4"><?= 'Welcome To The Bootcamp FEATI OOP'?></h2>
             <p>In this bootcamp, you will learn the fundamentals of the PHP language</p>
         </div>
     </div>
