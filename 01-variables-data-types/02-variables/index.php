@@ -17,8 +17,7 @@ CONVENTIONS:
 */
 
 $title = 'Learn PHP From Scratch';
-$heading = 'Welcome To The Course';
-$body = 'In this course, you will learn the fundamentals of the PHP language';
+$heading = 'Variables';
 
 ?>
 
@@ -40,9 +39,31 @@ $body = 'In this course, you will learn the fundamentals of the PHP language';
     </header>
     <div class="container mx-auto p-4 mt-4">
         <div class="bg-white rounded-lg shadow-md p-6">
-            <h2 class="text-2xl font-semibold mb-4"><?= $heading ?></h2>
-            <p><?= $body ?></p>
+            <h2 class="text-2xl font-semibold"><?= $heading ?></h2>
         </div>
+    </div>
+
+    <div class="container mx-auto bg-white rounded-md shadow-md p-5 m-4">
+        <?php
+        // List of allowed variable names
+        $first_name = 'John';
+        $firstName = 'Jane';
+        $FirstName = 'Doe';
+        $firstname = 'Smith';
+
+        echo $first_name . '<br>';
+        echo $firstName . '<br>';
+        echo $FirstName . '<br>';
+        echo $firstname . '<br>';
+
+        // List of unallowedd variable names
+        // Try to uncomment the code below to see that it will throw an error
+        // $1stName = 'John';
+        // $@firstName = 'Jane';
+
+        // echo $1stName . '<br>';
+        // echo $@firstName . '<br>';
+        ?>
     </div>
 
 </body>
